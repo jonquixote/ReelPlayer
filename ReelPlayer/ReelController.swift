@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ReelController.swift
 //  ReelPlayer
 //
 //  Created by John Hawley on 12/10/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ReelController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
