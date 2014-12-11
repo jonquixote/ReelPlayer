@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83432221A39500500B7C389 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432211A39500500B7C389 /* folder.png */; };
+		F83432261A39511400B7C389 /* level.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432251A39511400B7C389 /* level.png */; };
+		F83432281A3954DD00B7C389 /* reelbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432271A3954DD00B7C389 /* reelbg2.png */; };
+		F898C0371A3902850005DBDF /* ToM_EnsoCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = F898C0361A3902850005DBDF /* ToM_EnsoCircle.png */; };
+		F898C0391A3905D70005DBDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F898C0381A3905D70005DBDF /* UIKit.framework */; };
+		F898C03B1A3905E10005DBDF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F898C03A1A3905E10005DBDF /* AVFoundation.framework */; };
 		F8F466BC1A38483900DD2104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F466BB1A38483900DD2104 /* AppDelegate.swift */; };
 		F8F466BF1A38483900DD2104 /* ReelPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8F466BD1A38483900DD2104 /* ReelPlayer.xcdatamodeld */; };
 		F8F466C11A38483900DD2104 /* ReelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F466C01A38483900DD2104 /* ReelController.swift */; };
@@ -33,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F83432211A39500500B7C389 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		F83432251A39511400B7C389 /* level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level.png; sourceTree = "<group>"; };
+		F83432271A3954DD00B7C389 /* reelbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reelbg2.png; sourceTree = "<group>"; };
+		F834322A1A3956E800B7C389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/taximeter.ttf; sourceTree = "<group>"; };
+		F898C0361A3902850005DBDF /* ToM_EnsoCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToM_EnsoCircle.png; sourceTree = "<group>"; };
+		F898C0381A3905D70005DBDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F898C03A1A3905E10005DBDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F8F466B61A38483900DD2104 /* ReelPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F466BA1A38483900DD2104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F466BB1A38483900DD2104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F898C03B1A3905E10005DBDF /* AVFoundation.framework in Frameworks */,
+				F898C0391A3905D70005DBDF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,8 @@
 				F8F466B81A38483900DD2104 /* ReelPlayer */,
 				F8F466D11A38483900DD2104 /* ReelPlayerTests */,
 				F8F466B71A38483900DD2104 /* Products */,
+				F898C03A1A3905E10005DBDF /* AVFoundation.framework */,
+				F898C0381A3905D70005DBDF /* UIKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +117,11 @@
 				F8F466E41A38497A00DD2104 /* pausebutton2.png */,
 				F8F466E81A38498B00DD2104 /* rewind.png */,
 				F8F466E61A38498400DD2104 /* fastforward.png */,
+				F83432251A39511400B7C389 /* level.png */,
+				F83432271A3954DD00B7C389 /* reelbg2.png */,
+				F83432211A39500500B7C389 /* folder.png */,
+				F898C0361A3902850005DBDF /* ToM_EnsoCircle.png */,
+				F834322B1A3956E800B7C389 /* taximeter.ttf */,
 				F8F466C51A38483900DD2104 /* Images.xcassets */,
 				F8F466C71A38483900DD2104 /* LaunchScreen.xib */,
 				F8F466BD1A38483900DD2104 /* ReelPlayer.xcdatamodeld */,
@@ -216,9 +238,13 @@
 				F8F466C41A38483900DD2104 /* Main.storyboard in Resources */,
 				F8F466E11A38496800DD2104 /* play6.png in Resources */,
 				F8F466C91A38483900DD2104 /* LaunchScreen.xib in Resources */,
+				F898C0371A3902850005DBDF /* ToM_EnsoCircle.png in Resources */,
 				F8F466E51A38497A00DD2104 /* pausebutton2.png in Resources */,
 				F8F466E91A38498B00DD2104 /* rewind.png in Resources */,
+				F83432281A3954DD00B7C389 /* reelbg2.png in Resources */,
 				F8F466DF1A3848E000DD2104 /* reelbg.png in Resources */,
+				F83432221A39500500B7C389 /* folder.png in Resources */,
+				F83432261A39511400B7C389 /* level.png in Resources */,
 				F8F466E71A38498400DD2104 /* fastforward.png in Resources */,
 				F8F466E31A38497100DD2104 /* reel2.png in Resources */,
 				F8F466C61A38483900DD2104 /* Images.xcassets in Resources */,
@@ -264,6 +290,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F834322B1A3956E800B7C389 /* taximeter.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F834322A1A3956E800B7C389 /* Base */,
+			);
+			name = taximeter.ttf;
+			sourceTree = "<group>";
+		};
 		F8F466C21A38483900DD2104 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,6 +469,7 @@
 				F8F466DA1A38483900DD2104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F466DB1A38483900DD2104 /* Build configuration list for PBXNativeTarget "ReelPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +478,7 @@
 				F8F466DD1A38483900DD2104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
