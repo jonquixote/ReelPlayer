@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ReelController: UIViewController {
+class ReelController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     var recorder: AVAudioRecorder!
     
@@ -60,6 +60,17 @@ class ReelController: UIViewController {
         super.didReceiveMemoryWarning()
         recorder = nil
         player = nil
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "popoverSegue" {
+            let TrackPopupController = segue.destinationViewController as UIViewController
+            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            TrackPopupController.popoverPresentationController!.delegate = self
+        }
+    }
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
     }
     
     @IBAction func record(sender: UIButton) {

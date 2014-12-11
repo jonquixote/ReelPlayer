@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */; };
 		F83432221A39500500B7C389 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432211A39500500B7C389 /* folder.png */; };
 		F83432261A39511400B7C389 /* level.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432251A39511400B7C389 /* level.png */; };
 		F83432281A3954DD00B7C389 /* reelbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432271A3954DD00B7C389 /* reelbg2.png */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackPopupController.swift; sourceTree = "<group>"; };
 		F83432211A39500500B7C389 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
 		F83432251A39511400B7C389 /* level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level.png; sourceTree = "<group>"; };
 		F83432271A3954DD00B7C389 /* reelbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reelbg2.png; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				F8F466BB1A38483900DD2104 /* AppDelegate.swift */,
 				F8F466C01A38483900DD2104 /* ReelController.swift */,
 				F8F466C21A38483900DD2104 /* Main.storyboard */,
+				F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */,
 				F8F466DE1A3848E000DD2104 /* reelbg.png */,
 				F8F466E21A38497100DD2104 /* reel2.png */,
 				F8F466E01A38496800DD2104 /* play6.png */,
@@ -267,6 +270,7 @@
 			files = (
 				F8F466C11A38483900DD2104 /* ReelController.swift in Sources */,
 				F8F466BF1A38483900DD2104 /* ReelPlayer.xcdatamodeld in Sources */,
+				F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */,
 				F8F466BC1A38483900DD2104 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
