@@ -10,6 +10,6 @@ import UIKit
 import Foundation
 import AVFoundation
 
-class TrackPopupController: UIViewController, UIPopoverPresentationControllerDelegate {
+class TrackPopupController: UITableViewController, UIPopoverPresentationControllerDelegate {
 
 }

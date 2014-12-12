@@ -63,15 +63,30 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "popoverSegue" {
+        if segue.identifier == "popoverSegue1" {
+            let TrackPopupController = segue.destinationViewController as UIViewController
+            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            TrackPopupController.popoverPresentationController!.delegate = self
+        } else if segue.identifier == "popoverSegue2" {
+            let TrackPopupController = segue.destinationViewController as UIViewController
+            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            TrackPopupController.popoverPresentationController!.delegate = self
+        } else if segue.identifier == "popoverSegue3" {
+            let TrackPopupController = segue.destinationViewController as UIViewController
+            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            TrackPopupController.popoverPresentationController!.delegate = self
+        } else if segue.identifier == "popoverSegue4" {
             let TrackPopupController = segue.destinationViewController as UIViewController
             TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
             TrackPopupController.popoverPresentationController!.delegate = self
         }
     }
+    
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.None
     }
+    
+    
     
     @IBAction func record(sender: UIButton) {
         if player != nil && player.playing {

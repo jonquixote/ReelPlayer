@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */; };
+		F83209121A3A5AB60075FCCF /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83209111A3A5AB60075FCCF /* LibraryViewController.swift */; };
+		F83209141A3A844D0075FCCF /* LibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83209131A3A844D0075FCCF /* LibraryViewCell.swift */; };
 		F83432221A39500500B7C389 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432211A39500500B7C389 /* folder.png */; };
 		F83432261A39511400B7C389 /* level.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432251A39511400B7C389 /* level.png */; };
 		F83432281A3954DD00B7C389 /* reelbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = F83432271A3954DD00B7C389 /* reelbg2.png */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackPopupController.swift; sourceTree = "<group>"; };
+		F83209111A3A5AB60075FCCF /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		F83209131A3A844D0075FCCF /* LibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewCell.swift; sourceTree = "<group>"; };
 		F83432211A39500500B7C389 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
 		F83432251A39511400B7C389 /* level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level.png; sourceTree = "<group>"; };
 		F83432271A3954DD00B7C389 /* reelbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reelbg2.png; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 			children = (
 				F8F466BB1A38483900DD2104 /* AppDelegate.swift */,
 				F8F466C01A38483900DD2104 /* ReelController.swift */,
+				F83209111A3A5AB60075FCCF /* LibraryViewController.swift */,
+				F83209131A3A844D0075FCCF /* LibraryViewCell.swift */,
 				F8F466C21A38483900DD2104 /* Main.storyboard */,
 				F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */,
 				F8F466DE1A3848E000DD2104 /* reelbg.png */,
@@ -269,8 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F466C11A38483900DD2104 /* ReelController.swift in Sources */,
+				F83209121A3A5AB60075FCCF /* LibraryViewController.swift in Sources */,
 				F8F466BF1A38483900DD2104 /* ReelPlayer.xcdatamodeld in Sources */,
 				F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */,
+				F83209141A3A844D0075FCCF /* LibraryViewCell.swift in Sources */,
 				F8F466BC1A38483900DD2104 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
