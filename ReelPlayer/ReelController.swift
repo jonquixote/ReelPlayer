@@ -83,19 +83,7 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "popoverSegue1" {
-            let TrackPopupController = segue.destinationViewController as UIViewController
-            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
-            TrackPopupController.popoverPresentationController!.delegate = self
-        } else if segue.identifier == "popoverSegue2" {
-            let TrackPopupController = segue.destinationViewController as UIViewController
-            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
-            TrackPopupController.popoverPresentationController!.delegate = self
-        } else if segue.identifier == "popoverSegue3" {
-            let TrackPopupController = segue.destinationViewController as UIViewController
-            TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
-            TrackPopupController.popoverPresentationController!.delegate = self
-        } else if segue.identifier == "popoverSegue4" {
+        if segue.identifier == "popoverSegue" {
             let TrackPopupController = segue.destinationViewController as UIViewController
             TrackPopupController.modalPresentationStyle = UIModalPresentationStyle.Popover
             TrackPopupController.popoverPresentationController!.delegate = self
