@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C09786A21A3C03DF0082712A /* MixerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09786A11A3C03DF0082712A /* MixerViewController.swift */; };
 		C0CB95F21A3BCAC60047F41E /* taximeter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0CB95F11A3BCAC60047F41E /* taximeter.ttf */; };
 		C0CB95F61A3BE5E90047F41E /* wildtextures-metal-sheet-scratched-brushed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0CB95F51A3BE5E90047F41E /* wildtextures-metal-sheet-scratched-brushed.jpg */; };
+		C0CB95F81A3BECB90047F41E /* 20db.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0CB95F71A3BEC970047F41E /* 20db.otf */; };
+		C0F39D6C1A3BF1100061F109 /* mute.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0F39D6B1A3BF1100061F109 /* mute.jpeg */; };
+		C0F444FE1A3BFADC00AE8027 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F444FD1A3BFADC00AE8027 /* line.png */; };
+		C0F445041A3C005800AE8027 /* faderknob1.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F445031A3C005800AE8027 /* faderknob1.png */; };
 		F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */; };
 		F83209121A3A5AB60075FCCF /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83209111A3A5AB60075FCCF /* LibraryViewController.swift */; };
 		F83209141A3A844D0075FCCF /* LibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83209131A3A844D0075FCCF /* LibraryViewCell.swift */; };
@@ -44,8 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C09786A11A3C03DF0082712A /* MixerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixerViewController.swift; path = ../MixerViewController.swift; sourceTree = "<group>"; };
 		C0CB95F11A3BCAC60047F41E /* taximeter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = taximeter.ttf; path = ReelPlayer/taximeter.ttf; sourceTree = "<group>"; };
 		C0CB95F51A3BE5E90047F41E /* wildtextures-metal-sheet-scratched-brushed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wildtextures-metal-sheet-scratched-brushed.jpg"; sourceTree = "<group>"; };
+		C0CB95F71A3BEC970047F41E /* 20db.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 20db.otf; sourceTree = "<group>"; };
+		C0F39D6B1A3BF1100061F109 /* mute.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mute.jpeg; sourceTree = "<group>"; };
+		C0F444FD1A3BFADC00AE8027 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		C0F445031A3C005800AE8027 /* faderknob1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faderknob1.png; sourceTree = "<group>"; };
 		F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackPopupController.swift; sourceTree = "<group>"; };
 		F83209111A3A5AB60075FCCF /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		F83209131A3A844D0075FCCF /* LibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +108,10 @@
 		F8F466AD1A38483900DD2104 = {
 			isa = PBXGroup;
 			children = (
+				C0F445031A3C005800AE8027 /* faderknob1.png */,
+				C0F444FD1A3BFADC00AE8027 /* line.png */,
+				C0F39D6B1A3BF1100061F109 /* mute.jpeg */,
+				C0CB95F71A3BEC970047F41E /* 20db.otf */,
 				C0CB95F11A3BCAC60047F41E /* taximeter.ttf */,
 				C0CB95F51A3BE5E90047F41E /* wildtextures-metal-sheet-scratched-brushed.jpg */,
 				F8F466B81A38483900DD2104 /* ReelPlayer */,
@@ -124,6 +138,7 @@
 				F8F466C01A38483900DD2104 /* ReelController.swift */,
 				F83209111A3A5AB60075FCCF /* LibraryViewController.swift */,
 				F83209131A3A844D0075FCCF /* LibraryViewCell.swift */,
+				C09786A11A3C03DF0082712A /* MixerViewController.swift */,
 				F8F466C21A38483900DD2104 /* Main.storyboard */,
 				F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */,
 				F8F466DE1A3848E000DD2104 /* reelbg.png */,
@@ -256,13 +271,17 @@
 				F8F466C91A38483900DD2104 /* LaunchScreen.xib in Resources */,
 				F898C0371A3902850005DBDF /* ToM_EnsoCircle.png in Resources */,
 				F8F466E51A38497A00DD2104 /* pausebutton2.png in Resources */,
+				C0F39D6C1A3BF1100061F109 /* mute.jpeg in Resources */,
 				F8F466E91A38498B00DD2104 /* rewind.png in Resources */,
+				C0CB95F81A3BECB90047F41E /* 20db.otf in Resources */,
 				F83432281A3954DD00B7C389 /* reelbg2.png in Resources */,
 				F8F466DF1A3848E000DD2104 /* reelbg.png in Resources */,
+				C0F444FE1A3BFADC00AE8027 /* line.png in Resources */,
 				C0CB95F21A3BCAC60047F41E /* taximeter.ttf in Resources */,
 				F83432221A39500500B7C389 /* folder.png in Resources */,
 				F83432261A39511400B7C389 /* level.png in Resources */,
 				F8F466E71A38498400DD2104 /* fastforward.png in Resources */,
+				C0F445041A3C005800AE8027 /* faderknob1.png in Resources */,
 				F8F466E31A38497100DD2104 /* reel2.png in Resources */,
 				F8F466C61A38483900DD2104 /* Images.xcassets in Resources */,
 			);
@@ -285,6 +304,7 @@
 				F8F466C11A38483900DD2104 /* ReelController.swift in Sources */,
 				F83209121A3A5AB60075FCCF /* LibraryViewController.swift in Sources */,
 				F8F466BF1A38483900DD2104 /* ReelPlayer.xcdatamodeld in Sources */,
+				C09786A21A3C03DF0082712A /* MixerViewController.swift in Sources */,
 				F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */,
 				F83209141A3A844D0075FCCF /* LibraryViewCell.swift in Sources */,
 				F8F466BC1A38483900DD2104 /* AppDelegate.swift in Sources */,
