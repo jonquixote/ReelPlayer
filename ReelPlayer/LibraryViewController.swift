@@ -44,7 +44,7 @@ class LibraryViewController: UICollectionViewController {
     doubleTap.numberOfTapsRequired = 2
     doubleTap.numberOfTouchesRequired = 1
     doubleTap.delaysTouchesBegan = true
-    self.collectionView.addGestureRecognizer(doubleTap)
+    self.collectionView?.addGestureRecognizer(doubleTap)
     }
     
     /**
@@ -54,7 +54,7 @@ class LibraryViewController: UICollectionViewController {
         var cell:UICollectionViewCell!
         
         var p = rec.locationInView(self.collectionView)
-        var indexPath = self.collectionView.indexPathForItemAtPoint(p)
+        var indexPath = self.collectionView?.indexPathForItemAtPoint(p)
         if indexPath == nil {
             NSLog("couldn't find index path");
         } else {
@@ -71,7 +71,7 @@ class LibraryViewController: UICollectionViewController {
         }
         
         var p = rec.locationInView(self.collectionView)
-        var indexPath = self.collectionView.indexPathForItemAtPoint(p)
+        var indexPath = self.collectionView?.indexPathForItemAtPoint(p)
         if indexPath == nil {
             NSLog("couldn't find index path");
         } else {
@@ -86,7 +86,7 @@ class LibraryViewController: UICollectionViewController {
             return
         }
         var p = rec.locationInView(self.collectionView)
-        var indexPath = self.collectionView.indexPathForItemAtPoint(p)
+        var indexPath = self.collectionView?.indexPathForItemAtPoint(p)
         if indexPath == nil {
             NSLog("couldn't find index path");
         } else {
@@ -251,7 +251,7 @@ class LibraryViewController: UICollectionViewController {
         }
         dispatch_async(dispatch_get_main_queue(), {
             self.listRecordings()
-            self.collectionView.reloadData()
+            self.collectionView?.reloadData()
         })
     }
     
@@ -268,7 +268,7 @@ class LibraryViewController: UICollectionViewController {
         
         dispatch_async(dispatch_get_main_queue(), {
             self.listRecordings()
-            self.collectionView.reloadData()
+            self.collectionView?.reloadData()
         })
     }
 }
