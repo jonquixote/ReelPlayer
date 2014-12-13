@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0CB95F21A3BCAC60047F41E /* taximeter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0CB95F11A3BCAC60047F41E /* taximeter.ttf */; };
 		F82E41D61A398DED00CC41B0 /* TrackPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */; };
 		F83209121A3A5AB60075FCCF /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83209111A3A5AB60075FCCF /* LibraryViewController.swift */; };
 		F83209141A3A844D0075FCCF /* LibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83209131A3A844D0075FCCF /* LibraryViewCell.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0CB95F11A3BCAC60047F41E /* taximeter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = taximeter.ttf; path = ReelPlayer/taximeter.ttf; sourceTree = "<group>"; };
 		F82E41D51A398DED00CC41B0 /* TrackPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackPopupController.swift; sourceTree = "<group>"; };
 		F83209111A3A5AB60075FCCF /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		F83209131A3A844D0075FCCF /* LibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		F8F466AD1A38483900DD2104 = {
 			isa = PBXGroup;
 			children = (
+				C0CB95F11A3BCAC60047F41E /* taximeter.ttf */,
 				F8F466B81A38483900DD2104 /* ReelPlayer */,
 				F8F466D11A38483900DD2104 /* ReelPlayerTests */,
 				F8F466B71A38483900DD2104 /* Products */,
@@ -252,6 +255,7 @@
 				F8F466E91A38498B00DD2104 /* rewind.png in Resources */,
 				F83432281A3954DD00B7C389 /* reelbg2.png in Resources */,
 				F8F466DF1A3848E000DD2104 /* reelbg.png in Resources */,
+				C0CB95F21A3BCAC60047F41E /* taximeter.ttf in Resources */,
 				F83432221A39500500B7C389 /* folder.png in Resources */,
 				F83432261A39511400B7C389 /* level.png in Resources */,
 				F8F466E71A38498400DD2104 /* fastforward.png in Resources */,
