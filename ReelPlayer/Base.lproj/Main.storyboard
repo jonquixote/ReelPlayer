@@ -42,6 +42,7 @@
             <string>taximeter</string>
             <string>taximeter</string>
             <string>taximeter</string>
+            <string>taximeter</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -60,6 +61,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reelbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1x-Ia-dpE">
                                 <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty Tape Reel 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-UM-RSx">
+                                <rect key="frame" x="52" y="384" width="300" height="52"/>
+                                <color key="backgroundColor" white="0.021021792760000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                <color key="textColor" red="0.78931897100000004" green="0.0" blue="0.11927271020000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reel2.png" translatesAutoresizingMaskIntoConstraints="NO" id="uG7-tR-oQt">
                                 <rect key="frame" x="20" y="20" width="160" height="160"/>
                             </imageView>
@@ -67,10 +75,14 @@
                                 <rect key="frame" x="209" y="20" width="160" height="160"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQw-R7-P79">
-                                <rect key="frame" x="104" y="444" width="179" height="78"/>
+                                <rect key="frame" x="99" y="444" width="194" height="78"/>
+                                <color key="backgroundColor" white="0.021021792763157895" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="65"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-dy-hor">
                                 <rect key="frame" x="319" y="530" width="50" height="50"/>
@@ -171,15 +183,17 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-63-2Dw">
-                                        <rect key="frame" x="20" y="13" width="30" height="144"/>
+                                    <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-63-2Dw">
+                                        <rect key="frame" x="4" y="16" width="56" height="144"/>
                                         <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="1">
-                                            <color key="titleColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="track1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoo-nt-PiX"/>
                                             <segue destination="Xsu-O2-mpT" kind="popoverPresentation" identifier="popoverSegue1" popoverAnchorView="bZP-63-2Dw" id="WEA-fo-nW6">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
@@ -242,6 +256,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="track2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6JT-uo-471"/>
                                             <segue destination="I5H-mI-N9W" kind="popoverPresentation" identifier="popoverSegue2" popoverAnchorView="yKB-mN-TKt" id="oBt-R1-z0b">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
@@ -304,6 +319,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="track3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXz-9r-q0S"/>
                                             <segue destination="vvg-cy-0QP" kind="popoverPresentation" identifier="popoverSegue3" popoverAnchorView="Vj2-px-SeG" id="UBu-a1-K2n">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
@@ -372,11 +388,40 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="track4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypZ-XX-k88"/>
                                             <segue destination="2Kg-tV-qCW" kind="popoverPresentation" identifier="popoverSegue4" popoverAnchorView="AfA-0h-1XE" id="GLy-Ul-tBg">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.39999999999999997" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTS-vw-8kQ">
+                                        <rect key="frame" x="8" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273026315791" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="063-yb-DMv">
+                                        <rect key="frame" x="162" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWs-R7-ECW">
+                                        <rect key="frame" x="232" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNF-Pi-6Jb">
+                                        <rect key="frame" x="86" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -399,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="280"/>
+            <point key="canvasLocation" x="175" y="219"/>
         </scene>
         <!--Track Popup Controller-->
         <scene sceneID="cNA-Vh-Suj">
