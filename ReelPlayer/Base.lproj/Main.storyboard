@@ -61,13 +61,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reelbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1x-Ia-dpE">
                                 <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty Tape Reel 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-UM-RSx">
-                                <rect key="frame" x="52" y="384" width="300" height="52"/>
-                                <color key="backgroundColor" white="0.021021792760000001" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
-                                <color key="textColor" red="0.78931897100000004" green="0.0" blue="0.11927271020000001" alpha="0.75" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reel2.png" translatesAutoresizingMaskIntoConstraints="NO" id="uG7-tR-oQt">
                                 <rect key="frame" x="20" y="20" width="160" height="160"/>
                             </imageView>
@@ -138,9 +131,6 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLO-0G-gYD">
                                 <rect key="frame" x="52" y="196" width="300" height="171"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reelbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZo-d0-Gqj">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="171"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fj1-Q3-veV">
                                         <rect key="frame" x="14" y="114" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
@@ -401,6 +391,13 @@
                                         <color key="textColor" white="0.48098273026315791" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNF-Pi-6Jb">
+                                        <rect key="frame" x="86" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="063-yb-DMv">
                                         <rect key="frame" x="162" y="135" width="52" height="28"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -415,16 +412,19 @@
                                         <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNF-Pi-6Jb">
-                                        <rect key="frame" x="86" y="135" width="52" height="28"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reelbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZo-d0-Gqj">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="171"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty Tape Reel 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-UM-RSx">
+                                <rect key="frame" x="20" y="384" width="349" height="52"/>
+                                <color key="backgroundColor" white="0.021021792760000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                <color key="textColor" red="0.78931897100000004" green="0.0" blue="0.11927271020000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -444,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="219"/>
+            <point key="canvasLocation" x="136" y="219"/>
         </scene>
         <!--Track Popup Controller-->
         <scene sceneID="cNA-Vh-Suj">
