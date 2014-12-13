@@ -38,13 +38,13 @@ class LibraryViewController: UICollectionViewController {
     recognizer.minimumPressDuration = 0.5 //seconds
     recognizer.delegate = self
     recognizer.delaysTouchesBegan = true
-    self.collectionView.addGestureRecognizer(recognizer)
-    
+    self.collectionView?.addGestureRecognizer(recognizer)
+        
     var doubleTap = UITapGestureRecognizer(target:self, action:"doubleTap:")
     doubleTap.numberOfTapsRequired = 2
     doubleTap.numberOfTouchesRequired = 1
     doubleTap.delaysTouchesBegan = true
-    self.collectionView.addGestureRecognizer(doubleTap)
+    self.collectionView?.addGestureRecognizer(doubleTap)
     }
     
     /**
@@ -54,11 +54,11 @@ class LibraryViewController: UICollectionViewController {
         var cell:UICollectionViewCell!
         
         var p = rec.locationInView(self.collectionView)
-        var indexPath = self.collectionView.indexPathForItemAtPoint(p)
+        var indexPath = self.collectionView?.indexPathForItemAtPoint(p)
         if indexPath == nil {
             NSLog("couldn't find index path");
         } else {
-            cell = self.collectionView.cellForItemAtIndexPath(indexPath!)
+            cell = self.collectionView?.cellForItemAtIndexPath(indexPath!)
             NSLog("found cell at \(indexPath!.row)")
         }
         return cell
@@ -71,11 +71,11 @@ class LibraryViewController: UICollectionViewController {
         }
         
         var p = rec.locationInView(self.collectionView)
-        var indexPath = self.collectionView.indexPathForItemAtPoint(p)
+        var indexPath = self.collectionView?.indexPathForItemAtPoint(p)
         if indexPath == nil {
             NSLog("couldn't find index path");
         } else {
-            var cell = self.collectionView.cellForItemAtIndexPath(indexPath!)
+            var cell = self.collectionView?.cellForItemAtIndexPath(indexPath!)
             NSLog("found cell at \(indexPath!.row)")
             askToRename(indexPath!.row)
         }
@@ -86,11 +86,11 @@ class LibraryViewController: UICollectionViewController {
             return
         }
         var p = rec.locationInView(self.collectionView)
-        var indexPath = self.collectionView.indexPathForItemAtPoint(p)
+        var indexPath = self.collectionView?.indexPathForItemAtPoint(p)
         if indexPath == nil {
             NSLog("couldn't find index path");
         } else {
-            var cell = self.collectionView.cellForItemAtIndexPath(indexPath!)
+            var cell = self.collectionView?.cellForItemAtIndexPath(indexPath!)
             NSLog("found cell at \(indexPath!.row)")
             askToDelete(indexPath!.row)
         }
@@ -251,7 +251,7 @@ class LibraryViewController: UICollectionViewController {
         }
         dispatch_async(dispatch_get_main_queue(), {
             self.listRecordings()
-            self.collectionView.reloadData()
+            self.collectionView?.reloadData()
         })
     }
     
@@ -268,7 +268,7 @@ class LibraryViewController: UICollectionViewController {
         
         dispatch_async(dispatch_get_main_queue(), {
             self.listRecordings()
-            self.collectionView.reloadData()
+            self.collectionView?.reloadData()
         })
     }
 }
