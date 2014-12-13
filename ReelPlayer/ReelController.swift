@@ -28,10 +28,22 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBOutlet var rewindButton: UIButton!
     
     @IBOutlet var statusLabel: UILabel!
-
+    
+    @IBOutlet var track1Button: UIButton!
+    
+    @IBOutlet var track2Button: UIButton!
+    
+    @IBOutlet var track3Button: UIButton!
+    
+    @IBOutlet var track4Button: UIButton!
+    
+    
     var meterTimer:NSTimer!
     
     var soundFileURL:NSURL?
+    
+    
+    
     
 
     override func viewDidLoad() {
@@ -40,6 +52,8 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
         playButton.enabled = false
         setSessionPlayback()
         askForNotifications()
+        
+        
     }
     
     func updateAudioMeter(timer:NSTimer) {
@@ -397,5 +411,90 @@ extension ReelController : AVAudioPlayerDelegate {
     func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
         println("\(error.localizedDescription)")
     }
+    
+    
+    // changes color from black to red on tracks 1-4 (record enable). Doesn't allow you to have more than one red.
+    
+    // track 1
+    @IBAction func track1Button(sender: UIButton) {
+        
+        if track1Button.titleColorForState(UIControlState.Normal) == UIColor.blackColor() {
+            track1Button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)}
+        else {
+            track1Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track2Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track1Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track3Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track1Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track4Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track1Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        
+    }
+    
+    
+    //track 2
+    @IBAction func track2Button(sender: UIButton) {
+        if track2Button.titleColorForState(UIControlState.Normal) == UIColor.blackColor() {
+            track2Button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)}
+        else {
+            track2Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track1Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track2Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track3Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track2Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track4Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track2Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        
+    }
+    
+    
+    //track 3
+    @IBAction func track3Button(sender: UIButton) {
+        if track3Button.titleColorForState(UIControlState.Normal) == UIColor.blackColor() {
+            track3Button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)}
+        else {
+            track3Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track1Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track3Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track2Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track3Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track4Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track3Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+    }
+    
+    //track 4
+    
+    @IBAction func track4Button(sender: UIButton) {
+        if track4Button.titleColorForState(UIControlState.Normal) == UIColor.blackColor() {
+            track4Button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)}
+        else {
+            track4Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track1Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track4Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track2Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track4Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        if track3Button.titleColorForState(UIControlState.Normal) == UIColor.redColor() {
+            track4Button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        }
+        
+    }
+    ///////////////////////////////////////////
 }
+
+
 

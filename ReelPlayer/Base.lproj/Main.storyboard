@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="taximeter.ttf">
@@ -172,7 +172,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-63-2Dw">
-                                        <rect key="frame" x="20" y="13" width="30" height="150"/>
+                                        <rect key="frame" x="20" y="13" width="30" height="144"/>
                                         <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="1">
@@ -391,11 +391,15 @@
                         <outlet property="reels" destination="uG7-tR-oQt" id="31J-Ad-EyT"/>
                         <outlet property="rewindButton" destination="WXz-Kz-DVL" id="FaR-0e-WNl"/>
                         <outlet property="statusLabel" destination="dQw-R7-P79" id="sp6-Yd-7f3"/>
+                        <outlet property="track1Button" destination="bZP-63-2Dw" id="6YU-Wx-RIF"/>
+                        <outlet property="track2Button" destination="yKB-mN-TKt" id="rZ5-xg-XMe"/>
+                        <outlet property="track3Button" destination="Vj2-px-SeG" id="T0J-Yw-SFL"/>
+                        <outlet property="track4Button" destination="AfA-0h-1XE" id="rxu-Fi-uFg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="274"/>
+            <point key="canvasLocation" x="175" y="280"/>
         </scene>
         <!--Track Popup Controller-->
         <scene sceneID="cNA-Vh-Suj">
