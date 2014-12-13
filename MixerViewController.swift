@@ -10,8 +10,6 @@ import UIKit
 import Foundation
 import AVFoundation
 
-let reuseIdentifier = "recordingCell"
-
 class MixerViewController: UIViewController {
     
 }
