@@ -489,6 +489,9 @@ extension ReelController : AVAudioPlayerDelegate {
         
     }
     ///////////////////////////////////////////
+    
+    @IBAction func reelmenuspin(sender: UIButton) {
+    }
 }
 
 
