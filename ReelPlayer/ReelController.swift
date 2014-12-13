@@ -2,7 +2,7 @@
 //  ReelController.swift
 //  ReelPlayer
 //
-//  Created by John Hawley on 12/10/14.
+//  Created by John Hawley and Bo Jacobson on 12/10/14.
 //  Copyright (c) 2014 RealtoReal. All rights reserved.
 //
 

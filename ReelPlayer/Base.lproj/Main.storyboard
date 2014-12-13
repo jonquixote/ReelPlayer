@@ -2,9 +2,46 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="taximeter.ttf">
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
+            <string>taximeter</string>
             <string>taximeter</string>
             <string>taximeter</string>
             <string>taximeter</string>
@@ -128,6 +165,9 @@
                                 <state key="normal" title="Button" image="level.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="DsP-BL-tIn" kind="presentation" id="1t4-g1-JBV"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLO-0G-gYD">
                                 <rect key="frame" x="52" y="196" width="300" height="171"/>
@@ -438,7 +478,318 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="219"/>
+            <point key="canvasLocation" x="198" y="215"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GEj-xd-ZrV">
+            <objects>
+                <viewController id="DsP-BL-tIn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAw-n5-Eff"/>
+                        <viewControllerLayoutGuide type="bottom" id="XbW-mC-8cd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="469-Du-eq7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wildtextures-metal-sheet-scratched-brushed.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-hM-ZyE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtT-ED-lm6">
+                                <rect key="frame" x="41" y="47" width="300" height="171"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reelbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="NI3-Fb-zrr">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="171"/>
+                                    </imageView>
+                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO2-4W-UWI" userLabel="tr1rec">
+                                        <rect key="frame" x="4" y="16" width="56" height="144"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="track1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCE-JE-gD1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-XH-ubx" userLabel="1g1">
+                                        <rect key="frame" x="14" y="114" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtL-VM-OlP" userLabel="1g2">
+                                        <rect key="frame" x="14" y="100" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O2-RV-nBP" userLabel="1g3">
+                                        <rect key="frame" x="14" y="85" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l15-OV-bjS" userLabel="1g4">
+                                        <rect key="frame" x="14" y="71" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-tf-IBT" userLabel="1y1">
+                                        <rect key="frame" x="14" y="56" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-G2-HZl" userLabel="1y2">
+                                        <rect key="frame" x="14" y="42" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhI-il-bg5" userLabel="1y3">
+                                        <rect key="frame" x="14" y="27" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgq-dV-nb4" userLabel="1r1">
+                                        <rect key="frame" x="14" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-XQ-MbK" userLabel="tr2rec">
+                                        <rect key="frame" x="97" y="13" width="30" height="150"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="track2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MoO-Ik-YvT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n60-c1-XHu" userLabel="2g1">
+                                        <rect key="frame" x="91" y="114" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qom-UE-gM9" userLabel="2g2">
+                                        <rect key="frame" x="91" y="100" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xm-sl-KJz" userLabel="2g3">
+                                        <rect key="frame" x="91" y="85" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6H-pN-Msi" userLabel="2g4">
+                                        <rect key="frame" x="91" y="71" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p44-uZ-CWe" userLabel="2y1">
+                                        <rect key="frame" x="91" y="56" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ng-rB-4Ub" userLabel="2y2">
+                                        <rect key="frame" x="91" y="42" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-tn-PO2" userLabel="2y3">
+                                        <rect key="frame" x="91" y="27" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-F9-nA4" userLabel="1r1">
+                                        <rect key="frame" x="91" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZY-dn-HJZ" userLabel="tr3rec">
+                                        <rect key="frame" x="173" y="13" width="30" height="150"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="track3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stG-gf-9IY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSD-Ws-fAa" userLabel="3g1">
+                                        <rect key="frame" x="167" y="114" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dB-Bs-YBK" userLabel="3g2">
+                                        <rect key="frame" x="167" y="100" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2L-Fy-qpA" userLabel="3g3">
+                                        <rect key="frame" x="167" y="85" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdk-xg-oO3" userLabel="3g4">
+                                        <rect key="frame" x="167" y="71" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsO-0M-bxj" userLabel="3y1">
+                                        <rect key="frame" x="167" y="56" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-u4-Mg2" userLabel="3y2">
+                                        <rect key="frame" x="167" y="42" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXz-uN-qxy" userLabel="3y3">
+                                        <rect key="frame" x="167" y="27" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4c3-z7-ykn" userLabel="3r1">
+                                        <rect key="frame" x="167" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auw-P5-I11" userLabel="tr4rec">
+                                        <rect key="frame" x="243" y="13" width="30" height="150"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="21"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="track4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YrE-qv-5lM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgT-Pk-VIT" userLabel="4r1">
+                                        <rect key="frame" x="237" y="114" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-PN-asX" userLabel="4r2">
+                                        <rect key="frame" x="237" y="100" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqb-0w-3dx" userLabel="4r3">
+                                        <rect key="frame" x="237" y="85" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hne-lH-r7m" userLabel="4r4">
+                                        <rect key="frame" x="237" y="71" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLW-Y2-eh1" userLabel="4y1">
+                                        <rect key="frame" x="237" y="56" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3O-LT-bsm" userLabel="4y2">
+                                        <rect key="frame" x="237" y="42" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzn-FA-bhm" userLabel="4y3">
+                                        <rect key="frame" x="237" y="27" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtj-Ei-PcS" userLabel="4r1">
+                                        <rect key="frame" x="237" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-5K-Jbr" userLabel="tr1bkg">
+                                        <rect key="frame" x="8" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-YS-Xdp" userLabel="tr2bkg">
+                                        <rect key="frame" x="86" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUe-ds-CeR" userLabel="tr3bkg">
+                                        <rect key="frame" x="162" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fs-Sg-m9S" userLabel="tr4bkg">
+                                        <rect key="frame" x="232" y="135" width="52" height="28"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.48098273029999999" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="U1D-hM-ZyE" secondAttribute="height" id="2gX-Pg-UOa"/>
+                            <constraint firstAttribute="centerX" secondItem="U1D-hM-ZyE" secondAttribute="centerX" id="La4-7M-wWN"/>
+                            <constraint firstItem="XbW-mC-8cd" firstAttribute="top" secondItem="U1D-hM-ZyE" secondAttribute="bottom" id="OBa-5y-QFX"/>
+                            <constraint firstAttribute="centerY" secondItem="U1D-hM-ZyE" secondAttribute="centerY" id="Vpx-tB-LZC"/>
+                            <constraint firstAttribute="width" secondItem="U1D-hM-ZyE" secondAttribute="width" id="Yfp-yb-fXt"/>
+                            <constraint firstItem="U1D-hM-ZyE" firstAttribute="top" secondItem="MAw-n5-Eff" secondAttribute="bottom" constant="-20" id="apf-du-uv7"/>
+                            <constraint firstItem="U1D-hM-ZyE" firstAttribute="leading" secondItem="469-Du-eq7" secondAttribute="leadingMargin" constant="-16" id="kKE-lf-fjS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U1D-hM-ZyE" secondAttribute="trailing" constant="-16" id="ppo-oB-oza"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELc-Xy-8iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="371"/>
         </scene>
         <!--Track Popup Controller-->
         <scene sceneID="cNA-Vh-Suj">
@@ -565,5 +916,6 @@
         <image name="reel2.png" width="720" height="720"/>
         <image name="reelbg.png" width="1280" height="1280"/>
         <image name="rewind.png" width="620" height="620"/>
+        <image name="wildtextures-metal-sheet-scratched-brushed.jpg" width="5616" height="3744"/>
     </resources>
 </document>
