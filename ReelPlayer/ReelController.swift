@@ -361,52 +361,7 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
         }
         */
     }
-    
-}
 
-// MARK: AVAudioRecorderDelegate
-extension ReelController : AVAudioRecorderDelegate {
-    
-    func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!,
-        successfully flag: Bool) {
-            println("finished recording \(flag)")
-            pauseButton.enabled = false
-            playButton.enabled = true
-            recordButton.setTitle("Record", forState:.Normal)
-            
-            // iOS8 and later
-            var alert = UIAlertController(title: "Recorder",
-                message: "Finished Recording",
-                preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "Keep", style: .Default, handler: {action in
-                println("keep was tapped")
-            }))
-            alert.addAction(UIAlertAction(title: "Delete", style: .Default, handler: {action in
-                println("delete was tapped")
-                self.recorder.deleteRecording()
-            }))
-            self.presentViewController(alert, animated:true, completion:nil)
-    }
-    
-    func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder!,
-        error: NSError!) {
-            println("\(error.localizedDescription)")
-    }
-}
-
-// MARK: AVAudioPlayerDelegate
-extension ReelController : AVAudioPlayerDelegate {
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
-        println("finished playing \(flag)")
-        recordButton.enabled = true
-        pauseButton.enabled = false
-    }
-    
-    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
-        println("\(error.localizedDescription)")
-    }
-    
-    
 // changes color from black to red on tracks 1-4 (record enable). Doesn't allow you to have more than one red.
     
     // track 1 rec enable color red
@@ -492,6 +447,53 @@ extension ReelController : AVAudioPlayerDelegate {
     
     @IBAction func reelmenuspin(sender: UIButton) {
     }
+
+    
+}
+
+// MARK: AVAudioRecorderDelegate
+extension ReelController : AVAudioRecorderDelegate {
+    
+    func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!,
+        successfully flag: Bool) {
+            println("finished recording \(flag)")
+            pauseButton.enabled = false
+            playButton.enabled = true
+            recordButton.setTitle("Record", forState:.Normal)
+            
+            // iOS8 and later
+            var alert = UIAlertController(title: "Recorder",
+                message: "Finished Recording",
+                preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Keep", style: .Default, handler: {action in
+                println("keep was tapped")
+            }))
+            alert.addAction(UIAlertAction(title: "Delete", style: .Default, handler: {action in
+                println("delete was tapped")
+                self.recorder.deleteRecording()
+            }))
+            self.presentViewController(alert, animated:true, completion:nil)
+    }
+    
+    func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder!,
+        error: NSError!) {
+            println("\(error.localizedDescription)")
+    }
+}
+
+// MARK: AVAudioPlayerDelegate
+extension ReelController : AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        println("finished playing \(flag)")
+        recordButton.enabled = true
+        pauseButton.enabled = false
+    }
+    
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
+        println("\(error.localizedDescription)")
+    }
+    
+    
 }
 
 
