@@ -929,42 +929,6 @@
                                 <color key="textColor" red="0.78931897100000004" green="0.0" blue="0.11927271020000001" alpha="0.75" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJe-7o-w63" userLabel="1line.png">
-                                <rect key="frame" x="-256" y="327" width="640" height="300"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-Xz-P0u" userLabel="2line.png">
-                                <rect key="frame" x="-188" y="327" width="640" height="300"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="jm7-Dl-W8N" userLabel="3line.png">
-                                <rect key="frame" x="-121" y="327" width="640" height="300"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="BVb-lY-ewO" userLabel="4line.png">
-                                <rect key="frame" x="-50" y="327" width="640" height="300"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85e-Eb-jJb" userLabel="fader1">
-                                <rect key="frame" x="27" y="435" width="35" height="60"/>
-                                <state key="normal" title="Button" image="faderknob1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daV-ZI-VCB" userLabel="fader2">
-                                <rect key="frame" x="96" y="467" width="35" height="60"/>
-                                <state key="normal" title="Button" image="faderknob1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85X-uS-Br7" userLabel="fader3">
-                                <rect key="frame" x="162" y="435" width="35" height="60"/>
-                                <state key="normal" title="Button" image="faderknob1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzM-aW-Ncf" userLabel="fader4">
-                                <rect key="frame" x="233" y="447" width="35" height="60"/>
-                                <state key="normal" title="Button" image="faderknob1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huo-r1-q0H" userLabel="pausemixerButton">
                                 <rect key="frame" x="281" y="516" width="50" height="50"/>
                                 <state key="normal" title="Button" image="pausebutton2.png">
@@ -1107,8 +1071,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="84Y-Ql-tO3" customClass="track1slider">
-                                <rect key="frame" x="17" y="414" width="118" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-Jc-yhl" customClass="track1slider">
+                                <rect key="frame" x="-52" y="477" width="192" height="31"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                </accessibility>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="84Y-Ql-tO3" userLabel="Track 2slider" customClass="track1slider">
+                                <rect key="frame" x="17" y="477" width="192" height="31"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                </accessibility>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="spa-S4-lZu" userLabel="Track 3slider" customClass="track1slider">
+                                <rect key="frame" x="83" y="477" width="192" height="31"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                </accessibility>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hxv-SO-v7B" userLabel="Track 3slider" customClass="track1slider">
+                                <rect key="frame" x="154" y="477" width="192" height="31"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES"/>
                                 </accessibility>
@@ -1128,6 +1110,9 @@
                     </view>
                     <connections>
                         <outlet property="track1slider" destination="84Y-Ql-tO3" id="EPw-Pu-h6o"/>
+                        <outlet property="track2slider" destination="K7a-Jc-yhl" id="8Dr-9g-zFY"/>
+                        <outlet property="track3slider" destination="spa-S4-lZu" id="O29-YE-bd5"/>
+                        <outlet property="track4slider" destination="Hxv-SO-v7B" id="eRO-Ln-7bJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELc-Xy-8iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1252,10 +1237,8 @@
     </scenes>
     <resources>
         <image name="ToM_EnsoCircle.png" width="1425" height="1444"/>
-        <image name="faderknob1.png" width="91" height="180"/>
         <image name="fastforward.png" width="620" height="620"/>
         <image name="level.png" width="200" height="400"/>
-        <image name="line.png" width="640" height="480"/>
         <image name="mutebutton.png" width="506" height="315"/>
         <image name="pan2.png" width="314" height="318"/>
         <image name="pausebutton2.png" width="620" height="620"/>
