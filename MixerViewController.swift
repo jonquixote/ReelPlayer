@@ -10,36 +10,42 @@ import UIKit
 import Foundation
 import AVFoundation
 
+
+
 class MixerViewController: UIViewController {
-    
-    
-    
     
 @IBOutlet var track1slider: UISlider!
 
-    override func viewDidLoad() {
+@IBOutlet weak var slider1view: UIView!
+    
+ override func viewDidLoad() {
+        super.viewDidLoad()
         configuretrack1slider()
-        
-       
-
+    
     }
     
 
+    func configuretrack1slider() {
+    
+        let thumbImage = UIImage(named: "faderknob1")
+        track1slider.setThumbImage(thumbImage, forState: .Normal)
 
+       
+        
+        let sliderangle = CGFloat(M_PI_2)
+        track1slider.transform = CGAffineTransformRotate(track1slider.transform, sliderangle)
+        
+        
+         track1slider.addTarget(self, action: "sliderValueDidChange:", forControlEvents: .ValueChanged)
     
-func configuretrack1slider() {
+    }
     
-    let thumbImage = UIImage(named: "faderknob1")
     
-    track1slider.setThumbImage(thumbImage, forState: .Normal)
+    // MARK: Actions
+    
+    func sliderValueDidChange(slider: UISlider) {
+        NSLog("A slider changed its value: \(slider).")
+    }
 
-    track1slider.addTarget(self, action: "sliderValueDidChange:", forControlEvents: .ValueChanged)
-    
-    track1slider = UISlider(frame: CGRect(x: 0, y: 0, width: 200, height: 23))
-    
-    track1slider.transform = CGAffineTransformMakeRotation(CGFloat(M_PI)/180.0)
-}
-
-    
 
 }
