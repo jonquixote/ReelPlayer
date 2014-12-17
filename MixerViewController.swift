@@ -32,7 +32,7 @@ class MixerViewController: UIViewController {
 
        
         
-        let sliderangle = CGFloat(M_PI_2)
+        let sliderangle = CGFloat(-M_PI_2)
         track1slider.transform = CGAffineTransformRotate(track1slider.transform, sliderangle)
         
         
