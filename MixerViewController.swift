@@ -24,7 +24,60 @@ class MixerViewController: UIViewController {
 @IBOutlet var track4slider: UISlider!
     
 @IBOutlet weak var slider1view: UIView! // JOHN, what is this????
- 
+    
+
+@IBOutlet var mute1: UILabel!
+@IBOutlet var mute2: UILabel!
+@IBOutlet var mute3: UILabel!
+@IBOutlet var mute4: UILabel!
+    
+// MUTE BUTTONS 
+// Mute 1
+@IBAction func mutebutton1(sender: UIButton) {
+        
+       if mute1.textColor == UIColor.whiteColor() {
+        self.mute1.textColor = UIColor(red: 10, green: 0.0, blue: 0.0, alpha: 1.0)
+        }
+       else {
+        self.mute1.textColor = UIColor.whiteColor()
+        }
+}
+    
+//Mute 2
+@IBAction func mutebutton2(sender: UIButton) {
+    
+    if mute2.textColor == UIColor.whiteColor() {
+        self.mute2.textColor = UIColor(red: 10, green: 0.0, blue: 0.0, alpha: 1.0)
+    }
+    else {
+        self.mute2.textColor = UIColor.whiteColor()
+        }
+}
+    
+// Mute 3
+@IBAction func mutebutton3(sender: UIButton) {
+    
+    if mute3.textColor == UIColor.whiteColor() {
+        self.mute3.textColor = UIColor(red: 10, green: 0.0, blue: 0.0, alpha: 1.0)
+    }
+    else {
+        self.mute3.textColor = UIColor.whiteColor()
+    }
+    
+}
+    
+// Mute 4
+@IBAction func mutebutton4(sender: AnyObject) {
+    
+    if mute4.textColor == UIColor.whiteColor() {
+        self.mute4.textColor = UIColor(red: 10, green: 0.0, blue: 0.0, alpha: 1.0)
+    }
+    else {
+        self.mute4.textColor = UIColor.whiteColor()
+    }
+    
+    
+}
     
 override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +85,11 @@ override func viewDidLoad() {
         configuretrack2slider()
         configuretrack3slider()
         configuretrack4slider()
+    
+        mute1.textColor = UIColor.whiteColor()
+        mute2.textColor = UIColor.whiteColor()
+        mute3.textColor = UIColor.whiteColor()
+        mute4.textColor = UIColor.whiteColor()
     
     }
     
@@ -107,7 +165,7 @@ override func viewDidLoad() {
     
 
     
-// MARK: Actions   DO WE NEED THIS JOHN????? 
+// MARK: Actions   DO WE NEED THIS JOHN?????
     
 func sliderValueDidChange(slider: UISlider) {
         NSLog("A slider changed its value: \(slider).")

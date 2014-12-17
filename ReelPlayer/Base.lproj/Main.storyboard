@@ -135,15 +135,6 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-dy-hor">
-                                <rect key="frame" x="319" y="530" width="50" height="50"/>
-                                <state key="normal" title="Button" image="ToM_EnsoCircle.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqU-nk-7ZI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-z9-DTs">
                                 <rect key="frame" x="245" y="530" width="50" height="50"/>
                                 <state key="normal" title="Button" image="pausebutton2.png">
@@ -473,6 +464,15 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-dy-hor">
+                                <rect key="frame" x="319" y="530" width="50" height="50"/>
+                                <state key="normal" title="Button" image="recordbutton4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqU-nk-7ZI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -576,13 +576,6 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-5K-Jbr" userLabel="tr1bkg">
-                                        <rect key="frame" x="8" y="135" width="52" height="28"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-XQ-MbK" userLabel="tr2rec">
                                         <rect key="frame" x="79" y="13" width="30" height="150"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -641,13 +634,6 @@
                                         <rect key="frame" x="73" y="13" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-YS-Xdp" userLabel="tr2bkg">
-                                        <rect key="frame" x="68" y="135" width="52" height="28"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZY-dn-HJZ" userLabel="tr3rec">
@@ -710,13 +696,6 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUe-ds-CeR" userLabel="tr3bkg">
-                                        <rect key="frame" x="128" y="135" width="52" height="28"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auw-P5-I11" userLabel="tr4rec">
                                         <rect key="frame" x="199" y="13" width="30" height="150"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -775,13 +754,6 @@
                                         <rect key="frame" x="193" y="13" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="taximeter" family="taxi meter" pointSize="70"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fs-Sg-m9S" userLabel="tr4bkg">
-                                        <rect key="frame" x="188" y="135" width="52" height="28"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MASTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6x-am-iha" userLabel="Masterbkg">
@@ -897,6 +869,9 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mutebutton1:" destination="DsP-BL-tIn" eventType="touchUpInside" id="4et-kg-hnV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwl-b2-x0P" userLabel="mute2">
                                 <rect key="frame" x="83" y="280" width="60" height="39"/>
@@ -905,6 +880,9 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mutebutton2:" destination="DsP-BL-tIn" eventType="touchUpInside" id="oeE-wn-ijZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J11-Gf-xjA" userLabel="mute3">
                                 <rect key="frame" x="149" y="280" width="60" height="39"/>
@@ -913,6 +891,9 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mutebutton3:" destination="DsP-BL-tIn" eventType="touchUpInside" id="QIg-4k-5mM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-ec-rAM" userLabel="mute4">
                                 <rect key="frame" x="220" y="280" width="60" height="39"/>
@@ -921,6 +902,9 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mutebutton4:" destination="DsP-BL-tIn" eventType="touchUpInside" id="LDL-dm-T4F"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty Tape Reel 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LA3-8o-xAt">
                                 <rect key="frame" x="28" y="28" width="356" height="67"/>
@@ -1109,6 +1093,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mute1" destination="CTz-Y0-pr9" id="Vj0-9V-C1d"/>
+                        <outlet property="mute2" destination="MYW-Q1-w2N" id="RDO-m5-cn3"/>
+                        <outlet property="mute3" destination="kKG-Sc-PIN" id="4fw-VC-0A9"/>
+                        <outlet property="mute4" destination="O7o-nv-P4y" id="W6A-es-rNC"/>
                         <outlet property="track1slider" destination="84Y-Ql-tO3" id="EPw-Pu-h6o"/>
                         <outlet property="track2slider" destination="K7a-Jc-yhl" id="8Dr-9g-zFY"/>
                         <outlet property="track3slider" destination="spa-S4-lZu" id="O29-YE-bd5"/>
@@ -1236,13 +1224,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ToM_EnsoCircle.png" width="1425" height="1444"/>
         <image name="fastforward.png" width="620" height="620"/>
         <image name="level.png" width="200" height="400"/>
         <image name="mutebutton.png" width="506" height="315"/>
         <image name="pan2.png" width="314" height="318"/>
         <image name="pausebutton2.png" width="620" height="620"/>
         <image name="play6.png" width="620" height="620"/>
+        <image name="recordbutton4.png" width="684" height="684"/>
         <image name="reel2.png" width="720" height="720"/>
         <image name="reelbg.png" width="1280" height="1280"/>
         <image name="rewind.png" width="620" height="620"/>
