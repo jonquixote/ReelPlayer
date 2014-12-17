@@ -23,8 +23,6 @@ class MixerViewController: UIViewController {
 
 @IBOutlet var track4slider: UISlider!
     
-@IBOutlet weak var slider1view: UIView! // JOHN, what is this????
-    
 
 @IBOutlet var mute1: UILabel!
 @IBOutlet var mute2: UILabel!
@@ -165,7 +163,7 @@ override func viewDidLoad() {
     
 
     
-// MARK: Actions   DO WE NEED THIS JOHN?????
+// MARK: Actions   DO WE NEED THIS JOHN????? -- NEED? no WANT? mmmmm kinda? good for debugging
     
 func sliderValueDidChange(slider: UISlider) {
         NSLog("A slider changed its value: \(slider).")

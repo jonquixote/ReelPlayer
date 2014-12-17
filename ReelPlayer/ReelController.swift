@@ -43,9 +43,11 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
     
     var soundFileURL:NSURL?
     
-    
-    
-    
+    //// 12/17/14 - engine in progress...
+    var engine = AVAudioEngine()
+    var mixer = AVAudioInputNode()
+    var output = AVAudioOutputNode()
+    var error:NSError?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -448,6 +450,20 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBAction func reelmenuspin(sender: UIButton) {
     }
 
+    ///// 12/17/14 If user is interrupted, code needs an exit
+    
+    func audioPlayerBeginInterruption(player: AVAudioPlayer!) {
+        /* The audio session is deactivated here */
+        recorder.stop()
+        player.stop()
+    }
+    
+    func audioPlayerEndInterruption(player: AVAudioPlayer!,
+        withOptions flags: Int) {
+            if flags == AVAudioSessionInterruptionFlags_ShouldResume{
+                player.play()
+            }
+    }
     
 }
 
@@ -493,6 +509,7 @@ extension ReelController : AVAudioPlayerDelegate {
         println("\(error.localizedDescription)")
     }
     
+
     
 }
 
