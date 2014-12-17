@@ -135,6 +135,15 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-dy-hor">
+                                <rect key="frame" x="319" y="530" width="50" height="50"/>
+                                <state key="normal" title="Button" image="recordbutton4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqU-nk-7ZI"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-z9-DTs">
                                 <rect key="frame" x="245" y="530" width="50" height="50"/>
                                 <state key="normal" title="Button" image="pausebutton2.png">
@@ -164,15 +173,6 @@
                                 <state key="normal" title="Button" image="rewind.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dH-7G-617">
-                                <rect key="frame" x="301" y="443" width="40" height="80"/>
-                                <state key="normal" title="Button" image="level.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="DsP-BL-tIn" kind="presentation" id="1t4-g1-JBV"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLO-0G-gYD">
                                 <rect key="frame" x="52" y="196" width="300" height="171"/>
@@ -464,13 +464,13 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-dy-hor">
-                                <rect key="frame" x="319" y="530" width="50" height="50"/>
-                                <state key="normal" title="Button" image="recordbutton4.png">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dH-7G-617">
+                                <rect key="frame" x="301" y="443" width="40" height="80"/>
+                                <state key="normal" title="Button" image="level.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqU-nk-7ZI"/>
+                                    <segue destination="DsP-BL-tIn" kind="presentation" id="1t4-g1-JBV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -492,7 +492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198" y="215"/>
+            <point key="canvasLocation" x="240" y="-219"/>
         </scene>
         <!--Mixer View Controller-->
         <scene sceneID="GEj-xd-ZrV">
@@ -1054,6 +1054,11 @@
                                 <state key="normal" title="Button" image="reel2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="hdD-RS-AGZ" id="J8U-us-rDy">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-Jc-yhl" customClass="track1slider">
                                 <rect key="frame" x="-52" y="477" width="192" height="31"/>
@@ -1105,7 +1110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELc-Xy-8iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="-782"/>
+            <point key="canvasLocation" x="873" y="-760"/>
         </scene>
         <!--Track Popup Controller-->
         <scene sceneID="cNA-Vh-Suj">
@@ -1236,4 +1241,7 @@
         <image name="rewind.png" width="620" height="620"/>
         <image name="wildtextures-metal-sheet-scratched-brushed.jpg" width="5616" height="3744"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="J8U-us-rDy"/>
+    </inferredMetricsTieBreakers>
 </document>
