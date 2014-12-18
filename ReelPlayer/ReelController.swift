@@ -9,6 +9,14 @@
 import UIKit
 import AVFoundation
 
+
+//// 12/17/14 - engine in progress...
+var engine = AVAudioEngine()
+var input = engine.inputNode
+var mixer = engine.mainMixerNode
+var output = engine.outputNode
+var format = input.inputFormatForBus(0)
+
 class ReelController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     var recorder: AVAudioRecorder!
@@ -43,10 +51,6 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
     
     var soundFileURL:NSURL?
     
-    //// 12/17/14 - engine in progress...
-    var engine = AVAudioEngine()
-    var mixer = AVAudioInputNode()
-    var output = AVAudioOutputNode()
     var error:NSError?
 
     override func viewDidLoad() {
@@ -61,7 +65,8 @@ class ReelController: UIViewController, UIPopoverPresentationControllerDelegate 
         track3Button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         track4Button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
-        
+        engine.connect(input, to: mixer, format: format)
+        engine.connect(mixer, to: output, format: format)
     }
     
     func updateAudioMeter(timer:NSTimer) {
