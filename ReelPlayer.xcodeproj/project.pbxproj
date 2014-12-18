@@ -26,6 +26,7 @@
 		F898C0371A3902850005DBDF /* ToM_EnsoCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = F898C0361A3902850005DBDF /* ToM_EnsoCircle.png */; };
 		F898C0391A3905D70005DBDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F898C0381A3905D70005DBDF /* UIKit.framework */; };
 		F898C03B1A3905E10005DBDF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F898C03A1A3905E10005DBDF /* AVFoundation.framework */; };
+		F8ACA1661A428E0900E182A4 /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = F8ACA1651A428E0900E182A4 /* stopbutton.png */; };
 		F8F466BC1A38483900DD2104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F466BB1A38483900DD2104 /* AppDelegate.swift */; };
 		F8F466BF1A38483900DD2104 /* ReelPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8F466BD1A38483900DD2104 /* ReelPlayer.xcdatamodeld */; };
 		F8F466C11A38483900DD2104 /* ReelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F466C01A38483900DD2104 /* ReelController.swift */; };
@@ -72,6 +73,7 @@
 		F898C0361A3902850005DBDF /* ToM_EnsoCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToM_EnsoCircle.png; sourceTree = "<group>"; };
 		F898C0381A3905D70005DBDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F898C03A1A3905E10005DBDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F8ACA1651A428E0900E182A4 /* stopbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopbutton.png; sourceTree = "<group>"; };
 		F8F466B61A38483900DD2104 /* ReelPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F466BA1A38483900DD2104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F466BB1A38483900DD2104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				C0B737371A416D6D0022F68C /* recordbutton4.png */,
 				C09786A91A3C0E300082712A /* mutebutton.png */,
 				C0F445031A3C005800AE8027 /* faderknob1.png */,
+				F8ACA1651A428E0900E182A4 /* stopbutton.png */,
 				C0F444FD1A3BFADC00AE8027 /* line.png */,
 				C09786A71A3C0B990082712A /* pan2.png */,
 				C0F39D6B1A3BF1100061F109 /* mute.jpeg */,
@@ -283,6 +286,7 @@
 				C0F39D6C1A3BF1100061F109 /* mute.jpeg in Resources */,
 				F8F466E91A38498B00DD2104 /* rewind.png in Resources */,
 				C0CB95F81A3BECB90047F41E /* 20db.otf in Resources */,
+				F8ACA1661A428E0900E182A4 /* stopbutton.png in Resources */,
 				C09786AA1A3C0E300082712A /* mutebutton.png in Resources */,
 				F83432281A3954DD00B7C389 /* reelbg2.png in Resources */,
 				F8F466DF1A3848E000DD2104 /* reelbg.png in Resources */,

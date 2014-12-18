@@ -146,7 +146,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-z9-DTs">
                                 <rect key="frame" x="245" y="530" width="50" height="50"/>
-                                <state key="normal" title="Button" image="pausebutton2.png">
+                                <state key="normal" title="Button" image="stopbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1239,6 +1239,7 @@
         <image name="reel2.png" width="720" height="720"/>
         <image name="reelbg.png" width="1280" height="1280"/>
         <image name="rewind.png" width="620" height="620"/>
+        <image name="stopbutton.png" width="620" height="620"/>
         <image name="wildtextures-metal-sheet-scratched-brushed.jpg" width="5616" height="3744"/>
     </resources>
     <inferredMetricsTieBreakers>
